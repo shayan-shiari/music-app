@@ -7,7 +7,6 @@ import "./top-day.css";
 const TopDays = () => {
   const topDayUrl = "v1/song/top/day/0/100";
   const [data, setData] = useState([]);
-  console.log(data);
   useEffect(() => {
     fetchApi(topDayUrl).then((res) => setData(res.results));
   }, []);

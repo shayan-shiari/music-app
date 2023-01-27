@@ -11,9 +11,7 @@ const LastDetail = () => {
   const { id } = useParams();
   const [data, setData] = useState([]);
   const detail = id > 7 ?  data[id - 10] : data[id - 1];
-  console.log(detail?.id);
-  console.log(detail);
-  //
+
   useEffect(() => {
     fetchApi(id >7 ? songUrl : sliderUrl).then((res) => setData(res.results));
   }, [id]);

@@ -6,7 +6,8 @@ import "./artist.css";
 const AllArtist = () => {
   const artistUrl = "v1/artist/trending/0/4";
   const [data, setData] = useState([]);
-  console.log(data);
+
+  // get data
   useEffect(() => {
     fetchApi(artistUrl).then((res) => setData(res.results));
   }, []);

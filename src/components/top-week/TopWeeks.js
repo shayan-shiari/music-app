@@ -6,7 +6,6 @@ import TopWeek from "./TopWeek";
 const TopWeeks = () => {
     const topWeekUrl = "v1/song/top/week/0/100";
     const [data, setData] = useState([]);
-    console.log(data);
     useEffect(() => {
       fetchApi(topWeekUrl).then((res) => setData(res.results));
     }, []);
