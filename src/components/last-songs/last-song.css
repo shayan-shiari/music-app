@@ -1,0 +1,44 @@
+.last-song img{
+    width: 300px;
+}
+
+.last-song {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-song p {
+    color: rgba(0,0,0,0.38);
+}
+
+.last-song p:nth-child(2) {
+    color: rgba(0,0,0,0.74);
+    font-weight: bold;
+}
+
+.all-last-songs h1 {
+    text-align: left;
+}
+
+.all-last-songs .all{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .all-last-songs .all {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 676px) {
+    .all-last-songs .all {
+        grid-template-columns: 1fr;
+    }
+    
+}

@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Header from "./components/header/Header";
+import { Route, Routes } from "react-router-dom";
+import "./app.css";
+import Home from "./pages/Home";
+import LastDetail from "./components/common/LastDetail";
+import PlayList from "./pages/PlayList";
+import TopDetail from "./components/common/TopDetail";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="container">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="play-list" element={<PlayList />} />
+          <Route path="music/:id" element={<TopDetail />} />
+          <Route path="/last-detail/:id" element={<LastDetail />} />
+        </Routes>
+      </div>
+    );
+  }
 }
 
 export default App;

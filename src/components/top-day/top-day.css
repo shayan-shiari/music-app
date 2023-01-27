@@ -1,0 +1,44 @@
+.top img{
+    width: 150px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top p {
+    color: rgba(0,0,0,0.38);
+}
+
+.top p:nth-child(2) {
+    color: rgba(0,0,0,0.74);
+    font-weight: bold;
+}
+
+.tops h1 {
+    text-align: left;
+}
+
+.tops .all{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .tops .all {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 676px) {
+    .tops .all {
+        grid-template-columns: 1fr;
+    }
+    
+}
