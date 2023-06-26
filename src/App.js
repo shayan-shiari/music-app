@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "./components/header/Header";
 import { Route, Routes } from "react-router-dom";
-import "./app.css";
+import "./App.css";
 import Home from "./pages/Home";
 import LastDetail from "./components/common/LastDetail";
 import PlayList from "./pages/PlayList";
