@@ -43,7 +43,7 @@ header nav a:hover {
   color: #00b1f6;
 }
 
-@media screen and (max-width : 450px) {
+@media screen and (max-width: 450px) {
   header {
     max-width: 100%;
   }

@@ -21,9 +21,11 @@ const Slider = () => {
         modules={[Autoplay]}
         className="mySwiper"
       >
-        {data.map((item,index) => (
+        {data.map((item, index) => (
           <SwiperSlide key={item.id}>
-            <Link target="_blank" to={`/last-detail/${index + 1}`}><Slide image={item.image.slider} /></Link> 
+            <Link target="_blank" to={`/last-detail/${index + 1}`}>
+              <Slide image={item.image.slider} />
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
